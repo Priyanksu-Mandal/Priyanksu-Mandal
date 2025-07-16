@@ -30,6 +30,8 @@ At the moment, I’m building smart embedded systems under the guidance of **Pro
 
 When I’m not experimenting with electronics, I enjoy playing the sitar, exploring Hindustani classical music, and playing badminton. I am also committed to improving my communication and programming skills.
 
+🌍 I’m always excited to contribute to **project development** and collaborate on **open-source** projects — especially in a **remote** setting! 🤝💻
+
 ---
 
 ## 🔭 What I'm Working On
@@ -81,6 +83,7 @@ When I’m not experimenting with electronics, I enjoy playing the sitar, explor
 
 - 📧 Email: [priyanksumandal@gmail.com](mailto:priyanksumandal@gmail.com)  
 - 🔗 LinkedIn: [linkedin.com/in/priyanksu-mandal](https://www.linkedin.com/in/priyanksu-mandal)
+- I am always intrested to work on project development and open soure remotly 
 
 ---
 
