@@ -6,14 +6,15 @@
 Here are some ideas to get you started:
 - 🔭 I’m currently working on robotronics and developing IoT systems under the guidance of Prof. Anuj Grover at CPID, IIIT-Delhi
 - 🌱 I’m currently learning to code in STM32 (C++) and ESP modules
-- 👯 I’m looking to collaborate on embedded systems, robotronics, and VLSI design
+-
 - 🤔 I’m looking for help with advanced embedded systems and real-world VLSI projects
 - 💬 Ask me about embedded C++, Arduino, STM32, circuit design, and IoT systems
-- 😄 Pronouns: Pri-yaan-kshu
+
 - ⚡ Fun fact: I'm an introvert and a slow learner — but I never stop learning!
 -->
 
 # 👋 Hi, I'm Priyanksu Mandal
+- 😄 Pronouns: Pri-yaan-kshu
 
 🎓 **Student at Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)**  
 📍 Based in Delhi, India  
@@ -28,9 +29,9 @@ Hello! I’m Priyanksu Mandal, a passionate Electronics and Communication Engine
 
 At the moment, I’m building smart embedded systems under the guidance of **Prof. Anuj Grover** at the **CPID Lab, IIIT-Delhi**.
 
-When I’m not experimenting with electronics, I enjoy playing the sitar, exploring Hindustani classical music, and playing badminton. I am also committed to improving my communication and programming skills.
+When I’m not experimenting with electronics. I am also committed to improving my communication and programming skills.
 
-🌍 I’m always excited to contribute to **project development** and collaborate on **open-source** projects — especially in a **remote** setting! 🤝💻
+
 
 ---
 
@@ -41,6 +42,7 @@ When I’m not experimenting with electronics, I enjoy playing the sitar, explor
 - 🛠 Collaborating on open-source hardware projects  
 
 ---
+##-👯 I’m looking to collaborate on embedded systems, robotronics, and VLSI design
 
 ## 📚 Education
 
@@ -83,7 +85,7 @@ When I’m not experimenting with electronics, I enjoy playing the sitar, explor
 
 - 📧 Email: [priyanksumandal@gmail.com](mailto:priyanksumandal@gmail.com)  
 - 🔗 LinkedIn: [linkedin.com/in/priyanksu-mandal](https://www.linkedin.com/in/priyanksu-mandal)
-- I am always intrested to work on project development and open soure remotly 
+-🌍 I’m always excited to contribute to **project development** and collaborate on **open-source** projects — especially in a **remote** setting! 🤝💻
 
 ---
 
