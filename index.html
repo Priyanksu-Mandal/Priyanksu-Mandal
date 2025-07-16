@@ -2,41 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Priyanksu Mandal | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
     header {
-      background-color: #1f2937;
-      color: white;
-      padding: 20px;
+      padding: 2rem;
       text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-bottom: 2px solid #3b82f6;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+
     section {
-      padding: 20px;
-      max-width: 800px;
+      max-width: 960px;
       margin: auto;
+      padding: 3rem 2rem;
     }
-    h1, h2 {
-      color: #1f2937;
+
+    h2 {
+      font-size: 1.8rem;
+      border-left: 5px solid #3b82f6;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
     }
-    footer {
-      background: #1f2937;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
+
+    ul {
+      list-style: none;
+      padding-left: 1rem;
     }
+
+    ul li::before {
+      content: "\2022";
+      color: #3b82f6;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 2rem;
+    }
+
     a {
       color: #3b82f6;
       text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
@@ -44,31 +95,52 @@
 
 <header>
   <h1>👋 Hi, I'm Priyanksu Mandal</h1>
-  <p>ECE Student | Embedded Systems & IoT Developer | Open Source Enthusiast</p>
+  <p>ECE Student | Embedded Systems & IoT Enthusiast | Developer @ IIIT-Delhi</p>
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <p>I'm a student at IIIT-Delhi passionate about electronics, embedded systems, and robotics. I work on IoT-based automation using STM32, ESP, and Arduino platforms.</p>
+  <div class="card">
+    <h2>👨‍💻 About Me</h2>
+    <p>I'm a passionate engineer exploring the intersection of electronics and computer science. My interests lie in embedded systems, robotics, and IoT product development. I am currently pursuing my B.Tech at IIIT-Delhi and working on robotic and smart automation systems under Prof. Anuj Grover at CPID Lab.</p>
+  </div>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>🔌 Smart Power Analyzer (STM32 + PZEM-004T)</li>
-    <li>🎧 TPA3116D2 Home Theater Amp System</li>
-    <li>🌐 ESP8266 IoT Relay Switch (WiFi-controlled)</li>
-  </ul>
+  <div class="card">
+    <h2>🚀 Projects</h2>
+    <ul>
+      <li>Smart Power Analyzer (STM32 + PZEM-004T)</li>
+      <li>TPA3116D2 Amplifier-Based Home Theater System</li>
+      <li>WiFi-based IoT Relay System using ESP8266</li>
+    </ul>
+  </div>
 
-  <h2>Skills</h2>
-  <p>C++, Python, Embedded C, STM32, Arduino, Signal Processing, IoT</p>
+  <div class="card">
+    <h2>🛠️ Skills</h2>
+    <ul>
+      <li>Embedded C, C++, Python</li>
+      <li>Arduino, STM32, ESP32/8266</li>
+      <li>Signal Processing, Circuit Design</li>
+      <li>IoT System Design & Integration</li>
+    </ul>
+  </div>
 
-  <h2>Contact</h2>
-  <p>📧 <a href="mailto:priyanksumandal@gmail.com">priyanksumandal@gmail.com</a><br>
-     🔗 <a href="https://www.linkedin.com/in/priyanksu-mandal" target="_blank">LinkedIn</a>
-  </p>
+  <div class="card">
+    <h2>📜 Certifications</h2>
+    <ul>
+      <li>The Arduino Platform and C Programming</li>
+      <li>Interfacing with the Arduino & Raspberry Pi</li>
+      <li>IoT Specialization: Programming the Internet of Things</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📫 Contact</h2>
+    <p>Email: <a href="mailto:priyanksumandal@gmail.com">priyanksumandal@gmail.com</a><br>
+    LinkedIn: <a href="https://linkedin.com/in/priyanksu-mandal" target="_blank">linkedin.com/in/priyanksu-mandal</a></p>
+  </div>
 </section>
 
 <footer>
-  &copy; 2025 Priyanksu Mandal | Built with ❤️ on GitHub Pages
+  &copy; 2025 Priyanksu Mandal. Designed & deployed with ❤️ using GitHub Pages.
 </footer>
 
 </body>
