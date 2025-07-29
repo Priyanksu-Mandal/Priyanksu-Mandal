@@ -1,75 +1,117 @@
 <p align="center">
-  <a href="https://spotify-github-profile.vercel.app/api/view?uid=aczq88cnkrbukorcoqvna1zgg&redirect=true">
-    <img src="https://spotify-github-profile.vercel.app/api/view?uid=aczq88cnkrbukorcoqvna1zgg&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&bar_color=0300b8&bar_color_cover=false" alt="Probably Vibing to Yoasobi or smth."/>
-  </a>
+  <img src="https://komarev.com/ghpvc/?username=Priyanksu-Mandal&label=Profile%20views&color=0e75b6&style=flat" alt="profile views"/>
 </p>
 
-<h1 align="center">Hi 👋, I'm Giga!</h1>
-<h3 align="center">A soon-to-be Information Engineer from Indonesia.</h3>
-
-<!-- Centered About Me -->
-<div align="center" text-align="center">
-  <p>👀 I’m interested in Capture the Flag and Robotics </p>
-  <p>🌱 I’m currently learning Cyber Security </p>
-  <p>👨‍💻 Although, you'll see that I'm some sort of a generalist.</p>
-  <p>📫 You can reach me through my linkedin @gigahidjrikaaa</p>
-</div>
-
-<!-- Give some space -->
-<p>&nbsp;</p>
-
-<div align="center">
-
-</div>
-
-<img src="https://github-profile-trophy.vercel.app/?username=gigahidjrikaaa&theme=onedark&margin-w=15&margin-h=15&column=7" alt="infinicus" />
-
-<!-- Give some space -->
-<p>&nbsp;</p>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=gigahidjrikaaa&theme=monokai" alt="infinicus" />
-</div>
-
----
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gigahidjrikaaa&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=2B5BBD&icon_color=1124BB&text_color=A1A1A1&bg_color=0,000000,130F40" alt="my Github Stats"/>
-</div>
-
----
-<div align="center">
-<h2>Languages and Tools:</h2>
-<a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-</div>
-
----
-<div align="center">
-  <h2>My Most Used Language</h2>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=gigahidjrikaaa&show_icons=true&locale=en&layout=compact" alt="infinicus" />
-</div>
-
-<div align="center">
-  <h2>My LeetCode Stats</h2>
-</div>
+<h1 align="center">Hi 👋, I'm Priyanksu Mandal</h1>
+<h3 align="center">Electronics & Communication • IoT • Embedded Systems</h3>
+<p align="center"><i>Pronunciation: Pri-yaan-kshu</i></p>
 
 <p align="center">
-  <img src="https://leetcard.jacoblin.cool/gigahidjrikaaa?theme=unicorn&ext=activity" />
+  🎓 Student at <b>IIIT-Delhi</b> &nbsp;•&nbsp; 📍 Delhi, India <br/>
+  🎵 Indian Classical Music (Sitar) &nbsp;•&nbsp; 🏸 Badminton enthusiast
 </p>
-
 
 ---
 
-<div align="center" display="flex">
-  <h3>Contact me/connect with me through:</h3>
-  <a href="https://linkedin.com/in/gigahidjrikaaa" target="blank" margin="100px"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="gigahidjrikaaa" height="30" width="40" /></a>
-  <br>
-  <br>
-  
-  <img src="https://komarev.com/ghpvc/?username=infinicus&label=Profile%20views&color=0e75b6&style=flat" alt="infinicus" />
-  <br>
-  <img alt="followers" title="Follow me on Github" src="https://img.shields.io/github/followers/gigahidjrikaaa?color=236ad3&style=for-the-badge&logo=github&label=Follow"/>
-</div>
-<!---
-Infinicus/Infinicus is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## 🧠 About Me
+
+I’m an Electronics and Communication Engineering undergraduate who enjoys building hardware and embedded systems.  
+Currently, I’m exploring **robotronics**, **VLSI**, and **IoT**, with hands‑on work on **STM32**, **Arduino**, and **ESP** modules.
+
+I’m building smart embedded systems under the guidance of **Prof. Anuj Grover** at the **CPID Lab, IIIT‑Delhi**.  
+Alongside projects, I’m actively improving my communication and programming skills.
+
+---
+
+## 🔭 What I'm Working On
+- 🤖 Developing robotic and IoT systems with **STM32** & **ESP** modules  
+- 🧩 Learning advanced embedded programming (**C++ / STM32 / FreeRTOS**)  
+- 🛠️ Collaborating on open‑source hardware projects
+
+---
+
+## 👯 Collaboration
+I’m looking to collaborate on **embedded systems**, **robotronics**, and **VLSI design**.
+
+---
+
+## 🎓 Education
+- **IIIT‑Delhi** — *B.Tech in Electronics and Communication Engineering*  
+  *August 2023 – August 2027*
+
+---
+
+## 🛠️ Skills
+
+**Technical**
+- Circuit Design & Signal Processing  
+- Embedded Systems (**Arduino**, **STM32**, **ESP32/8266**)  
+- Internet of Things (**IoT**)  
+- Programming: **C++**, **Python**, **Embedded C**
+
+**Creative**
+- 🎶 Sitar Player — Indian Classical Music  
+- 6th Year Certification — *Prayag Sangeet Samiti*
+
+---
+
+## 📜 Certifications
+- ✔️ *The Arduino Platform and C Programming*  
+- ✔️ *Programming the Internet of Things (Specialization)*  
+- ✔️ *The Raspberry Pi Platform and Python Programming*
+
+---
+
+## 🏆 Honors & Awards
+- 🏅 All India National Scholarship Awardee (CCRT)  
+- 🥈 Multiple awards in Zonal School Sports and Culture Activities
+
+---
+
+## 📈 GitHub Highlights
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Priyanksu-Mandal&theme=onedark&margin-w=15&margin-h=15&column=7" alt="trophies"/>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Priyanksu-Mandal&theme=monokai" alt="profile summary"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Priyanksu-Mandal&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=2B5BBD&icon_color=1124BB&text_color=A1A1A1&bg_color=0,000000,130F40" alt="GitHub stats"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Priyanksu-Mandal&show_icons=true&locale=en&layout=compact" alt="Top languages"/>
+</p>
+
+---
+
+## 🧰 Languages & Tools
+
+<p align="center">
+  <!-- Core languages -->
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+  <!-- Platforms / boards explicitly mentioned -->
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" alt="arduino" width="40" height="40"/>
+  <!-- STM32 / ESP badges (no reliable devicon icons) -->
+  <img alt="STM32" src="https://img.shields.io/badge/STM32-embedded-blue.svg" />
+  <img alt="ESP32/8266" src="https://img.shields.io/badge/ESP32%2F8266-IoT-lightgrey.svg" />
+</p>
+
+---
+
+## 🌐 Contact
+- 📧 Email: **[priyanksumandal@gmail.com](mailto:priyanksumandal@gmail.com)**  
+- 🔗 LinkedIn: **[linkedin.com/in/priyanksu-mandal](https://www.linkedin.com/in/priyanksu-mandal)**
+
+<p align="center">
+  <img alt="followers" title="Follow me on GitHub" src="https://img.shields.io/github/followers/Priyanksu-Mandal?color=236ad3&style=for-the-badge&logo=github&label=Follow"/>
+</p>
+
+---
+
+<p align="center"><i>Thanks for visiting my profile! Let’s connect and build something awesome together. 🚀</i></p>
