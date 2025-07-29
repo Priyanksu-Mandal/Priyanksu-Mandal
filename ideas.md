@@ -43,13 +43,13 @@ I’m looking to collaborate on **embedded systems**, **robotronics**, and **VLS
 
 ## 🛠️ Skills
 
-**Technical**
+**👨‍💻 Technical**
 - Circuit Design & Signal Processing  
 - Embedded Systems (**Arduino**, **STM32**, **ESP32/8266**)  
 - Internet of Things (**IoT**)  
 - Programming: **C++**, **Python**, **Embedded C**
 
-**Creative**
+**🎼 Creative**
 - 🎶 Sitar Player — Indian Classical Music  
 - 6th Year Certification — *Prayag Sangeet Samiti*
 
@@ -106,7 +106,7 @@ I’m looking to collaborate on **embedded systems**, **robotronics**, and **VLS
 
 ## 🌐 Contact
 - 📧 Email: **[priyanksumandal@gmail.com](mailto:priyanksumandal@gmail.com)**  
-- 🔗 LinkedIn: **[linkedin.com/in/priyanksu-mandal](https://www.linkedin.com/in/priyanksu-mandal)**
+- 🔗 LinkedIn: **[linkedin.com/in/priyanksu-mandal](https://www.linkedin.com/in/priyanksu-mandal)**-🌍 I’m always excited to contribute to project development and collaborate on open-source projects — especially in a remote setting! 🤝💻
 
 <p align="center">
   <img alt="followers" title="Follow me on GitHub" src="https://img.shields.io/github/followers/Priyanksu-Mandal?color=236ad3&style=for-the-badge&logo=github&label=Follow"/>
