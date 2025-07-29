@@ -1,93 +1,117 @@
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=Priyanksu-Mandal&label=Profile%20views&color=0e75b6&style=flat" alt="profile views"/>
+</p>
 
-<!--
-**Priyanksu-Mandal/Priyanksu-Mandal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<h1 align="center">Hi 👋, I'm Priyanksu Mandal</h1>
+<h3 align="center">Electronics & Communication • IoT • Embedded Systems</h3>
+<p align="center"><i>Pronunciation: Pri-yaan-kshu</i></p>
 
-Here are some ideas to get you started:
-- 🔭 I’m currently working on robotronics and developing IoT systems under the guidance of Prof. Anuj Grover at CPID, IIIT-Delhi
-- 🌱 I’m currently learning to code in STM32 (C++) and ESP modules
--
-- 🤔 I’m looking for help with advanced embedded systems and real-world VLSI projects
-- 💬 Ask me about embedded C++, Arduino, STM32, circuit design, and IoT systems
-
-- ⚡ Fun fact: I'm an introvert and a slow learner — but I never stop learning!
--->
-
-# 👋 Hi, I'm Priyanksu Mandal
-- 😄 Pronouns: Pri-yaan-kshu
-
-🎓 **Student at Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)**  
-📍 Based in Delhi, India  
-💡 Passionate about **Electronics & Communication**, **IoT**, and **Embedded Systems**  
-🎵 Indian Classical Music lover & Sitar player | 🏸 Badminton enthusiast  
+<p align="center">
+  🎓 Student at <b>IIIT-Delhi</b> &nbsp;•&nbsp; 📍 Delhi, India <br/>
+  🎵 Indian Classical Music (Sitar) &nbsp;•&nbsp; 🏸 Badminton enthusiast
+</p>
 
 ---
 
 ## 🧠 About Me
 
-Hello! I’m Priyanksu Mandal, a passionate Electronics and Communication Engineering undergraduate who loves working on hardware and embedded systems. I’m currently exploring the fields of **robotronics**, **VLSI**, and **IoT**, with hands-on experience using STM32, Arduino, and ESP modules.
+I’m an Electronics and Communication Engineering undergraduate who enjoys building hardware and embedded systems.  
+Currently, I’m exploring **robotronics**, **VLSI**, and **IoT**, with hands‑on work on **STM32**, **Arduino**, and **ESP** modules.
 
-At the moment, I’m building smart embedded systems under the guidance of **Prof. Anuj Grover** at the **CPID Lab, IIIT-Delhi**.
-
-When I’m not experimenting with electronics. I am also committed to improving my communication and programming skills.
-
-
+I’m building smart embedded systems under the guidance of **Prof. Anuj Grover** at the **CPID Lab, IIIT‑Delhi**.  
+Alongside projects, I’m actively improving my communication and programming skills.
 
 ---
 
 ## 🔭 What I'm Working On
-
-- 🤖 Developing robotic and IoT systems with STM32 & ESP modules  
-- 🧠 Learning advanced embedded programming (C++/STM32/FreeRTOS)  
-- 🛠 Collaborating on open-source hardware projects  
+- 🤖 Developing robotic and IoT systems with **STM32** & **ESP** modules  
+- 🧩 Learning advanced embedded programming (**C++ / STM32 / FreeRTOS**)  
+- 🛠️ Collaborating on open‑source hardware projects
 
 ---
-##-👯 I’m looking to collaborate on embedded systems, robotronics, and VLSI design
 
-## 📚 Education
+## 👯 Collaboration
+I’m looking to collaborate on **embedded systems**, **robotronics**, and **VLSI design**.
 
-- 🎓 **IIIT-Delhi**  
-  *B.Tech in Electronics and Communication Engineering*  
+---
+
+## 🎓 Education
+- **IIIT‑Delhi** — *B.Tech in Electronics and Communication Engineering*  
   *August 2023 – August 2027*
 
 ---
 
 ## 🛠️ Skills
 
-### 👨‍💻 Technical
+**👨‍💻 Technical**
 - Circuit Design & Signal Processing  
-- Embedded Systems (Arduino, STM32, ESP32/8266)  
-- Internet of Things (IoT)  
-- Programming: C++, Python, Embedded C  
+- Embedded Systems (**Arduino**, **STM32**, **ESP32/8266**)  
+- Internet of Things (**IoT**)  
+- Programming: **C++**, **Python**, **Embedded C**
 
-### 🎼 Creative
-- 🎶 Sitar Player – Indian Classical Music  
-- 6th Year Certification – *Prayag Sangeet Samiti*
+**🎼 Creative**
+- 🎶 Sitar Player — Indian Classical Music  
+- 6th Year Certification — *Prayag Sangeet Samiti*
 
 ---
 
 ## 📜 Certifications
-
-- ✔️ *The Arduino Platform and C Programming*
-- ✔️ *Programming the Internet of Things (Specialization)*
+- ✔️ *The Arduino Platform and C Programming*  
+- ✔️ *Programming the Internet of Things (Specialization)*  
 - ✔️ *The Raspberry Pi Platform and Python Programming*
 
 ---
 
 ## 🏆 Honors & Awards
-
-- 🏅 All India National Scholarship Awardee (CCRT)
+- 🏅 All India National Scholarship Awardee (CCRT)  
 - 🥈 Multiple awards in Zonal School Sports and Culture Activities
 
 ---
 
-## 🌐 Contact Me
+## 📈 GitHub Highlights
 
-- 📧 Email: [priyanksumandal@gmail.com](mailto:priyanksumandal@gmail.com)  
-- 🔗 LinkedIn: [linkedin.com/in/priyanksu-mandal](https://www.linkedin.com/in/priyanksu-mandal)
--🌍 I’m always excited to contribute to **project development** and collaborate on **open-source** projects — especially in a **remote** setting! 🤝💻
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Priyanksu-Mandal&theme=onedark&margin-w=15&margin-h=15&column=7" alt="trophies"/>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Priyanksu-Mandal&theme=monokai" alt="profile summary"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Priyanksu-Mandal&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=2B5BBD&icon_color=1124BB&text_color=A1A1A1&bg_color=0,000000,130F40" alt="GitHub stats"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Priyanksu-Mandal&show_icons=true&locale=en&layout=compact" alt="Top languages"/>
+</p>
 
 ---
 
-_Thanks for visiting my profile! Let’s connect and build something awesome together. 🚀_
+## 🧰 Languages & Tools
 
+<p align="center">
+  <!-- Core languages -->
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+  <!-- Platforms / boards explicitly mentioned -->
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" alt="arduino" width="40" height="40"/>
+  <!-- STM32 / ESP badges (no reliable devicon icons) -->
+  <img alt="STM32" src="https://img.shields.io/badge/STM32-embedded-blue.svg" />
+  <img alt="ESP32/8266" src="https://img.shields.io/badge/ESP32%2F8266-IoT-lightgrey.svg" />
+</p>
 
+---
+
+## 🌐 Contact
+- 📧 Email: **[priyanksumandal@gmail.com](mailto:priyanksumandal@gmail.com)**  
+- 🔗 LinkedIn: **[linkedin.com/in/priyanksu-mandal](https://www.linkedin.com/in/priyanksu-mandal)**-🌍 I’m always excited to contribute to project development and collaborate on open-source projects — especially in a remote setting! 🤝💻
+
+<p align="center">
+  <img alt="followers" title="Follow me on GitHub" src="https://img.shields.io/github/followers/Priyanksu-Mandal?color=236ad3&style=for-the-badge&logo=github&label=Follow"/>
+</p>
+
+---
+
+<p align="center"><i>Thanks for visiting my profile! Let’s connect and build something awesome together. 🚀</i></p>
