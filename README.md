@@ -248,7 +248,7 @@ philosophy:
 </h2>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Priyanksu-Mandal&theme=algolia&no-frame=true&margin-w=12&margin-h=12&column=7" alt="GitHub Trophies" />
+  <img src="assets/trophy.png" alt="GitHub Trophies" />
 </p>
 
 <p align="center">
