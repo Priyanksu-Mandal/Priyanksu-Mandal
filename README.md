@@ -2,7 +2,7 @@
 <!-- HEADER BANNER: Dynamic Waving Gradient Header          -->
 <!-- ======================================================= -->
 <p align="center">
-  <img src="assets/banner.png" width="100%" alt="Priyanksu Mandal Banner"/>
+  <img src="https://camo.githubusercontent.com/6d5a4cc7c2af79257ff095021b2b42891cb2ed71dee6cda330546e86ec3cf170/68747470733a2f2f63617073756c652d72656e6465722e766563656c2e6170702f6170693f747970653d776176696e6726636f6c6f723d303a3062306631392c33303a3130326134332c37303a3065373562362c3130303a303062346438266865696768743d3132302673656374696f6e3d666f6f746572" width="100%" alt="Priyanksu Mandal Banner"/>
 </p>
 
 <!-- ======================================================= -->
