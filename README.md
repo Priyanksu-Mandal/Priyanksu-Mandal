@@ -2,7 +2,7 @@
 <!-- HEADER BANNER: Dynamic Waving Gradient Header          -->
 <!-- ======================================================= -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b0f19,30:102a43,70:0e75b6,100:00b4d8&height=250&section=header&text=Priyanksu%20Mandal&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Electronics%20%26%20Communication%20%E2%80%A2%20Embedded%20Systems%20%E2%80%A2%20IoT%20%E2%80%A2%20VLSI&descSize=16&descAlignY=58&descColor=64dfdf" width="100%" alt="Priyanksu Mandal Banner"/>
+  <img src="assets/banner.png" width="100%" alt="Priyanksu Mandal Banner"/>
 </p>
 
 <!-- ======================================================= -->
