@@ -48,7 +48,7 @@
 <!-- ======================================================= -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=00B4D8&center=true&vCenter=true&multiline=true&repeat=true&width=620&height=110&lines=%F0%9F%8E%93+ECE+Undergrad+%40+IIIT-Delhi+(2023+-+2027);%F0%9F%94%AC+CPID+;%F0%9F%A4%96+Building+Smart+Embedded+%26+IoT+Systems;%E2%9A%A1+STM32+%E2%80%A2+ESP32+%E2%80%A2+C%2B%2B+%E2%80%A2+FreeRTOS+%E2%80%A2+VLSI;%F0%9F%8E%B6+6th-Year+Certified+Sitarist+%7C+%F0%9F%8F%B8+Badminton+Player" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=00B4D8&center=true&vCenter=true&multiline=true&repeat=true&width=620&height=110&lines=%F0%9F%8E%93+ECE+Undergrad+%40+IIIT-Delhi+(2023+-+2027);%F0%9F%94%AC+Focus%3A+Embedded+Systems+%26+VLSI+Design;%F0%9F%A4%96+Building+Smart+Embedded+%26+IoT+Systems;%E2%9A%A1+STM32+%E2%80%A2+ESP32+%E2%80%A2+C%2B%2B+%E2%80%A2+FreeRTOS+%E2%80%A2+VLSI;%F0%9F%8E%B6+6th-Year+Certified+Sitarist+%7C+%F0%9F%8F%B8+Badminton+Player" alt="Typing SVG" />
   </a>
 </p>
 
@@ -71,10 +71,10 @@ engineer:
   institution: Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)
   location: Delhi, India 📍
   
-research_focus:
-  lab: CPID Lab (Circuits, Processing, & Integrated Devices)
-  advisor: Prof. Anuj Grover
-  domains: [Embedded Systems, Robotronics, IoT, VLSI Design]
+core_domains:
+  - Embedded Systems & RTOS
+  - Robotronics & IoT Telemetry
+  - VLSI Design & Micro-architectures
   
 philosophy:
   motto: "Bridging physical silicon with intelligent software."
@@ -90,7 +90,7 @@ philosophy:
 </p>
 
 <p>
-  Currently, I am conducting research and developing smart embedded systems at the <b>CPID Lab, IIIT-Delhi</b> under the mentorship of <b>Prof. Anuj Grover</b>.
+  Currently, I am actively exploring <b>robotronics</b>, <b>VLSI design</b>, and building intelligent embedded and IoT solutions.
 </p>
 
 ---
@@ -173,17 +173,17 @@ philosophy:
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>🔬 CPID Lab Embedded Research</h3>
-      <p>Undergraduate research under <b>Prof. Anuj Grover</b> at the Circuits, Processing, & Integrated Devices (CPID) Lab.</p>
+      <h3>🔬 Embedded Systems & VLSI Exploration</h3>
+      <p>Independent research and prototyping in hardware-software co-design, real-time control, and micro-architectures.</p>
       <ul>
-        <li>Exploring sensor fusion, embedded control algorithms, and edge data processing pipelines.</li>
+        <li>Exploring sensor fusion, embedded control algorithms, and edge telemetry architectures.</li>
         <li>Bridging hardware-level micro-architectures with robust embedded software implementations.</li>
       </ul>
       <p>
         <img src="https://img.shields.io/badge/IIIT--Delhi-0e75b6?style=flat-square"/>
-        <img src="https://img.shields.io/badge/CPID%20Lab-102a43?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Embedded%20Systems-102a43?style=flat-square"/>
         <img src="https://img.shields.io/badge/VLSI%20%26%20Circuits-1E90FF?style=flat-square"/>
-        <img src="https://img.shields.io/badge/Research-gold?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Hardware-gold?style=flat-square"/>
       </p>
     </td>
   </tr>
