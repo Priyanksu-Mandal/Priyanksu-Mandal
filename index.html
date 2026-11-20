@@ -3,9 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priyanksu Mandal | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Priyanksu Mandal | Electronics & Embedded Systems Engineer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
+    :root {
+      --bg-dark: #0b0f19;
+      --bg-card: rgba(16, 24, 40, 0.75);
+      --bg-card-hover: rgba(22, 36, 61, 0.85);
+      --primary: #00b4d8;
+      --primary-glow: rgba(0, 180, 216, 0.25);
+      --secondary: #0e75b6;
+      --accent: #10b981;
+      --gold: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(0, 180, 216, 0.4);
+      --font-main: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-mono: 'Fira Code', monospace;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -13,135 +38,588 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
+      font-family: var(--font-main);
+      background-color: var(--bg-dark);
+      color: var(--text-main);
       line-height: 1.6;
-      scroll-behavior: smooth;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(14, 117, 182, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(0, 180, 216, 0.1) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(15, 23, 42, 0.8) 0px, transparent 100%);
+      background-attachment: fixed;
     }
 
-    header {
-      padding: 2rem;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.4);
-      border-bottom: 2px solid #3b82f6;
+    /* Ambient background mesh */
+    .ambient-glow {
+      position: fixed;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 350px;
+      background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+      z-index: -1;
+      pointer-events: none;
+      filter: blur(60px);
     }
 
-    header h1 {
-      font-size: 2.5rem;
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(16px);
+      background: rgba(11, 15, 25, 0.8);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 100;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .nav-brand {
       font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
     }
 
-    header p {
-      font-size: 1.1rem;
-      color: #cbd5e1;
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
     }
 
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+      position: relative;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1rem;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--accent);
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      font-family: var(--font-mono);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff 40%, var(--primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-sub {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 750px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      color: white;
+      box-shadow: 0 4px 20px var(--primary-glow);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0, 180, 216, 0.4);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    /* Section Styling */
     section {
-      max-width: 960px;
-      margin: auto;
-      padding: 3rem 2rem;
+      margin-bottom: 4rem;
     }
 
-    h2 {
+    .section-header {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-header h2 {
       font-size: 1.8rem;
-      border-left: 5px solid #3b82f6;
-      padding-left: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .section-header .line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--border-color), transparent);
+    }
+
+    /* Cards */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 1rem;
+      padding: 2rem;
+      backdrop-filter: blur(12px);
+      transition: all 0.3s ease;
+      margin-bottom: 1.5rem;
+    }
+
+    .card:hover {
+      border-color: var(--border-hover);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      transform: translateY(-3px);
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Project Cards */
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-icon {
+      font-size: 2rem;
+      color: var(--primary);
       margin-bottom: 1rem;
     }
 
-    ul {
-      list-style: none;
-      padding-left: 1rem;
+    .project-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: white;
     }
 
-    ul li::before {
-      content: "\2022";
-      color: #3b82f6;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
+    .project-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
     }
 
-    .card {
-      background: #1e293b;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      margin-bottom: 2rem;
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
 
-    a {
-      color: #3b82f6;
-      text-decoration: none;
+    .tag {
+      background: rgba(0, 180, 216, 0.1);
+      color: var(--primary);
+      border: 1px solid rgba(0, 180, 216, 0.25);
+      padding: 0.25rem 0.65rem;
+      border-radius: 0.375rem;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      font-weight: 500;
     }
 
+    /* Skills Badges */
+    .skills-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .skills-group h3 {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .skills-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .skill-pill {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .skill-pill:hover {
+      border-color: var(--primary);
+      background: rgba(0, 180, 216, 0.08);
+      color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
     footer {
+      border-top: 1px solid var(--border-color);
       text-align: center;
-      padding: 2rem;
-      background: rgba(0, 0, 0, 0.3);
+      padding: 2.5rem 1rem;
+      color: var(--text-muted);
       font-size: 0.9rem;
     }
 
-    @media screen and (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.4rem; }
+      nav { padding: 1rem; }
+      .nav-links { display: none; }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>👋 Hi, I'm Priyanksu Mandal</h1>
-  <p>ECE Student | Embedded Systems & IoT Enthusiast | Developer @ IIIT-Delhi</p>
-</header>
+  <div class="ambient-glow"></div>
 
-<section>
-  <div class="card">
-    <h2>👨‍💻 About Me</h2>
-    <p>I'm a passionate engineer exploring the intersection of electronics and computer science. My interests lie in embedded systems, robotics, and IoT product development. I am currently pursuing my B.Tech at IIIT-Delhi and working on robotic and smart automation systems under Prof. Anuj Grover at CPID Lab.</p>
-  </div>
-
-  <div class="card">
-    <h2>🚀 Projects</h2>
-    <ul>
-      <li>Smart Power Analyzer (STM32 + PZEM-004T)</li>
-      <li>TPA3116D2 Amplifier-Based Home Theater System</li>
-      <li>WiFi-based IoT Relay System using ESP8266</li>
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="nav-brand">
+      <i class="fa-solid fa-microchip"></i> Priyanksu.m()
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Tech Stack</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#creative">Music & Sports</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="status-badge">
+        <span class="status-dot"></span> CPID Lab Researcher & ECE Undergrad @ IIIT-Delhi
+      </div>
+      <h1>Priyanksu Mandal</h1>
+      <p class="hero-sub">
+        Electronics & Communication Engineer building low-latency embedded firmware, 
+        smart IoT nodes, and high-fidelity hardware systems.
+      </p>
+      <div class="hero-buttons">
+        <a href="https://github.com/Priyanksu-Mandal" target="_blank" class="btn btn-primary">
+          <i class="fa-brands fa-github"></i> GitHub Profile
+        </a>
+        <a href="https://linkedin.com/in/priyanksu-mandal" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:priyanksumandal@gmail.com" class="btn btn-outline">
+          <i class="fa-solid fa-envelope"></i> Get in Touch
+        </a>
+      </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-user-astronaut" style="color: var(--primary)"></i> About Me</h2>
+        <div class="line"></div>
+      </div>
+      <div class="card">
+        <p style="font-size: 1.05rem; margin-bottom: 1rem;">
+          I am an Electronics and Communication Engineering undergraduate at <b>IIIT-Delhi (2023–2027)</b>. 
+          My core technical domain lies at the intersection of physical hardware and low-level firmware architecture.
+        </p>
+        <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 1rem;">
+          Currently, I conduct hands-on research and prototyping under the guidance of <b>Prof. Anuj Grover</b> at the 
+          <b>CPID Lab (Circuits, Processing, & Integrated Devices)</b>, exploring smart robotic nodes, sensor fusion, and micro-architectures.
+        </p>
+        <p style="color: var(--text-muted); font-size: 1rem;">
+          Outside engineering, I am a trained Indian Classical Sitar player holding a 6th-Year Senior Diploma from 
+          <b>Prayag Sangeet Samiti</b>, an All-India CCRT National Scholarship recipient, and a competitive badminton player.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-code-branch" style="color: var(--primary)"></i> Featured Projects</h2>
+        <div class="line"></div>
+      </div>
+      <div class="grid-2">
+        <!-- Project 1 -->
+        <div class="card project-card">
+          <div>
+            <div class="project-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3 class="project-title">Smart Power Analyzer</h3>
+            <p class="project-desc">
+              High-speed electrical telemetry monitoring unit built around an STM32 microcontroller and PZEM-004T sensor. 
+              Monitors real-time AC voltage, current, active power, and power factor with fault-handling interrupts.
+            </p>
+          </div>
+          <div class="tag-container">
+            <span class="tag">STM32</span>
+            <span class="tag">PZEM-004T</span>
+            <span class="tag">UART</span>
+            <span class="tag">Embedded C</span>
+            <span class="tag">FreeRTOS</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card project-card">
+          <div>
+            <div class="project-icon"><i class="fa-solid fa-volume-high"></i></div>
+            <h3 class="project-title">TPA3116D2 Hi-Fi Home Theater System</h3>
+            <p class="project-desc">
+              Custom-built 2.1-channel audio power amplifier utilizing TI's Class-D TPA3116D2 topology. 
+              Designed custom active signal filtering, preamplification stages, and low-impedance power rail decoupling.
+            </p>
+          </div>
+          <div class="tag-container">
+            <span class="tag">Circuit Design</span>
+            <span class="tag">Class-D Audio</span>
+            <span class="tag">Signal Conditioning</span>
+            <span class="tag">LTspice</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card project-card">
+          <div>
+            <div class="project-icon"><i class="fa-solid fa-wifi"></i></div>
+            <h3 class="project-title">Wi-Fi IoT Relay & Automation System</h3>
+            <p class="project-desc">
+              Intelligent multi-channel IoT switching unit with remote web dashboard and MQTT messaging queue telemetry. 
+              Features non-volatile state restoration and hardware safety watchdogs.
+            </p>
+          </div>
+          <div class="tag-container">
+            <span class="tag">ESP8266/ESP32</span>
+            <span class="tag">MQTT</span>
+            <span class="tag">REST API</span>
+            <span class="tag">C++</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="card project-card">
+          <div>
+            <div class="project-icon"><i class="fa-solid fa-microchip"></i></div>
+            <h3 class="project-title">CPID Lab Embedded Systems</h3>
+            <p class="project-desc">
+              Research in hardware-software co-design, real-time deterministic sensor loops, and edge intelligence 
+              under Prof. Anuj Grover at IIIT-Delhi.
+            </p>
+          </div>
+          <div class="tag-container">
+            <span class="tag">IIIT-Delhi</span>
+            <span class="tag">CPID Lab</span>
+            <span class="tag">VLSI & Circuits</span>
+            <span class="tag">ARM Cortex</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="skills">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-screwdriver-wrench" style="color: var(--primary)"></i> Technical Stack</h2>
+        <div class="line"></div>
+      </div>
+      <div class="card">
+        <div class="skills-group">
+          <h3>Languages & Firmware</h3>
+          <div class="skills-pills">
+            <div class="skill-pill"><i class="fa-solid fa-code" style="color: #00599C"></i> C++</div>
+            <div class="skill-pill"><i class="fa-solid fa-c" style="color: #A8B9CC"></i> C / Embedded C</div>
+            <div class="skill-pill"><i class="fa-brands fa-python" style="color: #3776AB"></i> Python</div>
+            <div class="skill-pill"><i class="fa-solid fa-microchip" style="color: #764ABC"></i> Verilog HDL</div>
+            <div class="skill-pill"><i class="fa-solid fa-terminal" style="color: #4EAA25"></i> Bash</div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>Hardware & Microcontrollers</h3>
+          <div class="skills-pills">
+            <div class="skill-pill"><i class="fa-solid fa-microchip" style="color: #03234B"></i> STM32 (ARM Cortex)</div>
+            <div class="skill-pill"><i class="fa-solid fa-wifi" style="color: #E7352C"></i> ESP32 & ESP8266</div>
+            <div class="skill-pill"><i class="fa-solid fa-memory" style="color: #00979D"></i> Arduino Platforms</div>
+            <div class="skill-pill"><i class="fa-brands fa-raspberry-pi" style="color: #A22846"></i> Raspberry Pi</div>
+            <div class="skill-pill"><i class="fa-solid fa-clock" style="color: #78C557"></i> FreeRTOS</div>
+          </div>
+        </div>
+
+        <div class="skills-group">
+          <h3>EDA, Protocols & Tools</h3>
+          <div class="skills-pills">
+            <div class="skill-pill"><i class="fa-solid fa-wave-square" style="color: #FF6600"></i> LTspice</div>
+            <div class="skill-pill"><i class="fa-solid fa-draw-polygon" style="color: #314CB0"></i> KiCad</div>
+            <div class="skill-pill"><i class="fa-solid fa-gear" style="color: #00205B"></i> STM32CubeIDE</div>
+            <div class="skill-pill"><i class="fa-solid fa-network-wired" style="color: #005C8A"></i> I2C / SPI / UART</div>
+            <div class="skill-pill"><i class="fa-solid fa-satellite-dish" style="color: #660066"></i> MQTT</div>
+            <div class="skill-pill"><i class="fa-brands fa-git-alt" style="color: #F05032"></i> Git & GitHub</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creative Corner -->
+    <section id="creative">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-music" style="color: var(--gold)"></i> The Creative Corner</h2>
+        <div class="line"></div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="font-size: 1.25rem; color: var(--gold); margin-bottom: 0.75rem;">
+            <i class="fa-solid fa-guitar"></i> Indian Classical Sitar
+          </h3>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Accomplished Indian Classical Sitarist with a 6th-Year Senior Diploma from <b>Prayag Sangeet Samiti, Prayagraj</b>.
+          </p>
+          <div class="tag-container">
+            <span class="tag" style="color: var(--gold); border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.1);">6th Year Certified</span>
+            <span class="tag" style="color: var(--gold); border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.1);">CCRT National Scholar</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="font-size: 1.25rem; color: var(--accent); margin-bottom: 0.75rem;">
+            <i class="fa-solid fa-table-tennis-paddle-ball"></i> Sports & Athletics
+          </h3>
+          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+            Badminton enthusiast with multiple awards in Zonal School Sports and Cultural events.
+          </p>
+          <div class="tag-container">
+            <span class="tag" style="color: var(--accent); border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.1);">Badminton</span>
+            <span class="tag" style="color: var(--accent); border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.1);">Zonal Awards</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-envelope" style="color: var(--primary)"></i> Let's Connect</h2>
+        <div class="line"></div>
+      </div>
+      <div class="card" style="text-align: center; padding: 3rem 1.5rem;">
+        <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Always Open to Exciting Hardware Collaborations</h3>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">
+          Whether it is embedded firmware, IoT architecture, or open-source hardware, feel free to drop a message!
+        </p>
+        <div class="hero-buttons">
+          <a href="mailto:priyanksumandal@gmail.com" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Email Me
+          </a>
+          <a href="https://linkedin.com/in/priyanksu-mandal" target="_blank" class="btn btn-outline">
+            <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <div class="card">
-    <h2>🛠️ Skills</h2>
-    <ul>
-      <li>Embedded C, C++, Python</li>
-      <li>Arduino, STM32, ESP32/8266</li>
-      <li>Signal Processing, Circuit Design</li>
-      <li>IoT System Design & Integration</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>📜 Certifications</h2>
-    <ul>
-      <li>The Arduino Platform and C Programming</li>
-      <li>Interfacing with the Arduino & Raspberry Pi</li>
-      <li>IoT Specialization: Programming the Internet of Things</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>📫 Contact</h2>
-    <p>Email: <a href="mailto:priyanksumandal@gmail.com">priyanksumandal@gmail.com</a><br>
-    LinkedIn: <a href="https://linkedin.com/in/priyanksu-mandal" target="_blank">linkedin.com/in/priyanksu-mandal</a></p>
-  </div>
-</section>
-
-<footer>
-  &copy; 2025 Priyanksu Mandal. Designed & deployed with ❤️ using GitHub Pages.
-</footer>
+  <!-- Footer -->
+  <footer>
+    <p>Designed with ❤️ by <b>Priyanksu Mandal</b> &bull; Deployed via GitHub Actions</p>
+  </footer>
 
 </body>
 </html>
