@@ -48,7 +48,7 @@
 <!-- ======================================================= -->
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=00B4D8&center=true&vCenter=true&multiline=true&repeat=true&width=620&height=110&lines=%F0%9F%8E%93+ECE+Undergrad+%40+IIIT-Delhi+(2023+-+2027);%F0%9F%94%AC+CPID+Lab+Researcher+(under+Prof.+Anuj+Grover);%F0%9F%A4%96+Building+Smart+Embedded+%26+IoT+Systems;%E2%9A%A1+STM32+%E2%80%A2+ESP32+%E2%80%A2+C%2B%2B+%E2%80%A2+FreeRTOS+%E2%80%A2+VLSI;%F0%9F%8E%B6+6th-Year+Certified+Sitarist+%7C+%F0%9F%8F%B8+Badminton+Player" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=00B4D8&center=true&vCenter=true&multiline=true&repeat=true&width=620&height=110&lines=%F0%9F%8E%93+ECE+Undergrad+%40+IIIT-Delhi+(2023+-+2027);%F0%9F%94%AC+CPID+;%F0%9F%A4%96+Building+Smart+Embedded+%26+IoT+Systems;%E2%9A%A1+STM32+%E2%80%A2+ESP32+%E2%80%A2+C%2B%2B+%E2%80%A2+FreeRTOS+%E2%80%A2+VLSI;%F0%9F%8E%B6+6th-Year+Certified+Sitarist+%7C+%F0%9F%8F%B8+Badminton+Player" alt="Typing SVG" />
   </a>
 </p>
 
