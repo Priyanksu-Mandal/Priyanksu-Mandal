@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <link rel="stylesheet" href="assets/styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Priyanksu Mandal | Electronics & Embedded Systems Engineer</title>
@@ -11,394 +10,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
-  <!-- FontAwesome for icons -->
+  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <style>
-    :root {
-      --bg-dark: #0b0f19;
-      --bg-card: rgba(16, 24, 40, 0.75);
-      --bg-card-hover: rgba(22, 36, 61, 0.85);
-      --primary: #00b4d8;
-      --primary-glow: rgba(0, 180, 216, 0.25);
-      --secondary: #0e75b6;
-      --accent: #10b981;
-      --gold: #f59e0b;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --border-color: rgba(255, 255, 255, 0.08);
-      --border-hover: rgba(0, 180, 216, 0.4);
-      --font-main: 'Plus Jakarta Sans', -apple-system, sans-serif;
-      --font-mono: 'Fira Code', monospace;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: var(--font-main);
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      line-height: 1.6;
-      overflow-x: hidden;
-      background-image: 
-        radial-gradient(at 0% 0%, rgba(14, 117, 182, 0.15) 0px, transparent 50%),
-        radial-gradient(at 100% 100%, rgba(0, 180, 216, 0.1) 0px, transparent 50%),
-        radial-gradient(at 50% 50%, rgba(15, 23, 42, 0.8) 0px, transparent 100%);
-      background-attachment: fixed;
-    }
-
-    /* Ambient background mesh */
-    .ambient-glow {
-      position: fixed;
-      top: 15%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 600px;
-      height: 350px;
-      background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
-      z-index: -1;
-      pointer-events: none;
-      filter: blur(60px);
-    }
-
-    /* Navigation */
-    nav {
-      position: sticky;
-      top: 0;
-      backdrop-filter: blur(16px);
-      background: rgba(11, 15, 25, 0.8);
-      border-bottom: 1px solid var(--border-color);
-      z-index: 100;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .nav-brand {
-      font-weight: 800;
-      font-size: 1.25rem;
-      color: var(--primary);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-family: var(--font-mono);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 0.95rem;
-      transition: all 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      color: var(--primary);
-    }
-
-    /* Container */
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 2.5rem 1.5rem;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 4rem 1rem 3rem;
-      position: relative;
-    }
-
-    .status-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.4rem 1rem;
-      background: rgba(16, 185, 129, 0.1);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      color: var(--accent);
-      border-radius: 9999px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      font-family: var(--font-mono);
-    }
-
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      background-color: var(--accent);
-      border-radius: 50%;
-      animation: pulse 2s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.9); }
-    }
-
-    .hero h1 {
-      font-size: 3.2rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 1rem;
-      background: linear-gradient(135deg, #ffffff 40%, var(--primary) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-sub {
-      font-size: 1.25rem;
-      color: var(--text-muted);
-      max-width: 750px;
-      margin: 0 auto 2rem;
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      padding: 0.75rem 1.5rem;
-      border-radius: 0.5rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.25s ease;
-      font-size: 0.95rem;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--secondary), var(--primary));
-      color: white;
-      box-shadow: 0 4px 20px var(--primary-glow);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 25px rgba(0, 180, 216, 0.4);
-    }
-
-    .btn-outline {
-      background: rgba(255, 255, 255, 0.05);
-      color: var(--text-main);
-      border: 1px solid var(--border-color);
-    }
-
-    .btn-outline:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: var(--primary);
-      transform: translateY(-2px);
-    }
-
-    /* Section Styling */
-    section {
-      margin-bottom: 4rem;
-    }
-
-    .section-header {
-      margin-bottom: 2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .section-header h2 {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: var(--text-main);
-    }
-
-    .section-header .line {
-      flex: 1;
-      height: 1px;
-      background: linear-gradient(to right, var(--border-color), transparent);
-    }
-
-    /* Cards */
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 1rem;
-      padding: 2rem;
-      backdrop-filter: blur(12px);
-      transition: all 0.3s ease;
-      margin-bottom: 1.5rem;
-    }
-
-    .card:hover {
-      border-color: var(--border-hover);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-      transform: translateY(-3px);
-    }
-
-    /* Grid Layouts */
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-    }
-
-    /* Project Cards */
-    .project-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .project-icon {
-      font-size: 2rem;
-      color: var(--primary);
-      margin-bottom: 1rem;
-    }
-
-    .project-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 0.75rem;
-      color: white;
-    }
-
-    .project-desc {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      margin-bottom: 1.25rem;
-      flex-grow: 1;
-    }
-
-    .tag-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .tag {
-      background: rgba(0, 180, 216, 0.1);
-      color: var(--primary);
-      border: 1px solid rgba(0, 180, 216, 0.25);
-      padding: 0.25rem 0.65rem;
-      border-radius: 0.375rem;
-      font-size: 0.75rem;
-      font-family: var(--font-mono);
-      font-weight: 500;
-    }
-
-    /* Skills Badges */
-    .skills-group {
-      margin-bottom: 1.5rem;
-    }
-
-    .skills-group h3 {
-      font-size: 1rem;
-      color: var(--text-muted);
-      margin-bottom: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .skills-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-
-    .skill-pill {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border-color);
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: all 0.2s ease;
-    }
-
-    .skill-pill:hover {
-      border-color: var(--primary);
-      background: rgba(0, 180, 216, 0.08);
-      color: var(--primary);
-      transform: translateY(-2px);
-    }
-
-    /* Footer */
-    footer {
-      border-top: 1px solid var(--border-color);
-      text-align: center;
-      padding: 2.5rem 1rem;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2.4rem; }
-      nav { padding: 1rem; }
-      .nav-links { display: none; }
-    }
-  </style>
+  <!-- Apple Theme Styles -->
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
   <div class="ambient-glow"></div>
 
-  <!-- Navigation -->
+  <!-- Apple-Style Navigation Bar -->
   <nav>
-  <a href="#" class="nav-brand">
-    <i class="fa-solid fa-microchip"></i> Priyanksu.m()
-  </a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Tech Stack</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#creative">Music & Sports</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
-</nav>
     <a href="#" class="nav-brand">
       <i class="fa-solid fa-microchip"></i> Priyanksu.m()
     </a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Tech Stack</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#creative">Music & Sports</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Tech Stack</a></li>
+        <li><a href="#creative">Music & Sports</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Toggle Dark/Light Mode">
+        <i class="fa-regular fa-moon" id="theme-icon"></i>
+      </button>
+    </div>
   </nav>
 
   <div class="container">
@@ -428,19 +66,19 @@
     <!-- About Me -->
     <section id="about">
       <div class="section-header">
-        <h2><i class="fa-solid fa-user-astronaut" style="color: var(--primary)"></i> About Me</h2>
+        <h2><i class="fa-solid fa-user-astronaut" style="color: var(--accent-cyan)"></i> About Me</h2>
         <div class="line"></div>
       </div>
       <div class="card">
         <p style="font-size: 1.05rem; margin-bottom: 1rem;">
           I am an Electronics and Communication Engineering undergraduate at <b>IIIT-Delhi (2023–2027)</b>. 
-          My core technical domain lies at the intersection of physical hardware and low-level firmware architecture.
+          My core technical domain lies at the intersection of physical hardware, silicon architectures, and low-level firmware.
         </p>
-        <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 1rem;">
-          Currently, I conduct hands-on research and prototyping under the guidance of <b>Prof. Anuj Grover</b> at the 
-          <b>CPID Lab (Circuits, Processing, & Integrated Devices)</b>, exploring smart robotic nodes, sensor fusion, and micro-architectures.
+        <p style="color: var(--text-secondary); font-size: 1rem; margin-bottom: 1rem;">
+          Currently, I conduct research and development under the guidance of <b>Prof. Anuj Grover</b> at the 
+          <b>CPID Lab (Circuits, Processing, & Integrated Devices)</b>, focusing on smart robotic automation, sensor telemetry, and RTOS firmware.
         </p>
-        <p style="color: var(--text-muted); font-size: 1rem;">
+        <p style="color: var(--text-secondary); font-size: 1rem;">
           Outside engineering, I am a trained Indian Classical Sitar player holding a 6th-Year Senior Diploma from 
           <b>Prayag Sangeet Samiti</b>, an All-India CCRT National Scholarship recipient, and a competitive badminton player.
         </p>
@@ -450,7 +88,7 @@
     <!-- Featured Projects -->
     <section id="projects">
       <div class="section-header">
-        <h2><i class="fa-solid fa-code-branch" style="color: var(--primary)"></i> Featured Projects</h2>
+        <h2><i class="fa-solid fa-code-branch" style="color: var(--accent-cyan)"></i> Featured Projects</h2>
         <div class="line"></div>
       </div>
       <div class="grid-2">
@@ -495,7 +133,7 @@
         <div class="card project-card">
           <div>
             <div class="project-icon"><i class="fa-solid fa-wifi"></i></div>
-            <h3 class="project-title">Wi-Fi IoT Relay & Automation System</h3>
+            <h3 class="project-title">Wi-Fi IoT Relay & Automation Controller</h3>
             <p class="project-desc">
               Intelligent multi-channel IoT switching unit with remote web dashboard and MQTT messaging queue telemetry. 
               Features non-volatile state restoration and hardware safety watchdogs.
@@ -532,40 +170,40 @@
     <!-- Tech Stack -->
     <section id="skills">
       <div class="section-header">
-        <h2><i class="fa-solid fa-screwdriver-wrench" style="color: var(--primary)"></i> Technical Stack</h2>
+        <h2><i class="fa-solid fa-screwdriver-wrench" style="color: var(--accent-cyan)"></i> Technical Stack</h2>
         <div class="line"></div>
       </div>
       <div class="card">
         <div class="skills-group">
           <h3>Languages & Firmware</h3>
           <div class="skills-pills">
-            <div class="skill-pill"><i class="fa-solid fa-code" style="color: #00599C"></i> C++</div>
-            <div class="skill-pill"><i class="fa-solid fa-c" style="color: #A8B9CC"></i> C / Embedded C</div>
+            <div class="skill-pill"><i class="fa-solid fa-code" style="color: #0071e3"></i> C++</div>
+            <div class="skill-pill"><i class="fa-solid fa-c" style="color: #94a3b8"></i> C / Embedded C</div>
             <div class="skill-pill"><i class="fa-brands fa-python" style="color: #3776AB"></i> Python</div>
             <div class="skill-pill"><i class="fa-solid fa-microchip" style="color: #764ABC"></i> Verilog HDL</div>
-            <div class="skill-pill"><i class="fa-solid fa-terminal" style="color: #4EAA25"></i> Bash</div>
+            <div class="skill-pill"><i class="fa-solid fa-terminal" style="color: #10b981"></i> Bash</div>
           </div>
         </div>
 
         <div class="skills-group">
           <h3>Hardware & Microcontrollers</h3>
           <div class="skills-pills">
-            <div class="skill-pill"><i class="fa-solid fa-microchip" style="color: #03234B"></i> STM32 (ARM Cortex)</div>
+            <div class="skill-pill"><i class="fa-solid fa-microchip" style="color: #0071e3"></i> STM32 (ARM Cortex)</div>
             <div class="skill-pill"><i class="fa-solid fa-wifi" style="color: #E7352C"></i> ESP32 & ESP8266</div>
             <div class="skill-pill"><i class="fa-solid fa-memory" style="color: #00979D"></i> Arduino Platforms</div>
             <div class="skill-pill"><i class="fa-brands fa-raspberry-pi" style="color: #A22846"></i> Raspberry Pi</div>
-            <div class="skill-pill"><i class="fa-solid fa-clock" style="color: #78C557"></i> FreeRTOS</div>
+            <div class="skill-pill"><i class="fa-solid fa-clock" style="color: #10b981"></i> FreeRTOS</div>
           </div>
         </div>
 
         <div class="skills-group">
           <h3>EDA, Protocols & Tools</h3>
           <div class="skills-pills">
-            <div class="skill-pill"><i class="fa-solid fa-wave-square" style="color: #FF6600"></i> LTspice</div>
+            <div class="skill-pill"><i class="fa-solid fa-wave-square" style="color: #f59e0b"></i> LTspice</div>
             <div class="skill-pill"><i class="fa-solid fa-draw-polygon" style="color: #314CB0"></i> KiCad</div>
-            <div class="skill-pill"><i class="fa-solid fa-gear" style="color: #00205B"></i> STM32CubeIDE</div>
-            <div class="skill-pill"><i class="fa-solid fa-network-wired" style="color: #005C8A"></i> I2C / SPI / UART</div>
-            <div class="skill-pill"><i class="fa-solid fa-satellite-dish" style="color: #660066"></i> MQTT</div>
+            <div class="skill-pill"><i class="fa-solid fa-gear" style="color: #0071e3"></i> STM32CubeIDE</div>
+            <div class="skill-pill"><i class="fa-solid fa-network-wired" style="color: #00b4d8"></i> I2C / SPI / UART</div>
+            <div class="skill-pill"><i class="fa-solid fa-satellite-dish" style="color: #9333ea"></i> MQTT</div>
             <div class="skill-pill"><i class="fa-brands fa-git-alt" style="color: #F05032"></i> Git & GitHub</div>
           </div>
         </div>
@@ -575,33 +213,33 @@
     <!-- Creative Corner -->
     <section id="creative">
       <div class="section-header">
-        <h2><i class="fa-solid fa-music" style="color: var(--gold)"></i> The Creative Corner</h2>
+        <h2><i class="fa-solid fa-music" style="color: var(--accent-gold)"></i> The Creative Corner</h2>
         <div class="line"></div>
       </div>
       <div class="grid-2">
         <div class="card">
-          <h3 style="font-size: 1.25rem; color: var(--gold); margin-bottom: 0.75rem;">
+          <h3 style="font-size: 1.25rem; color: var(--accent-gold); margin-bottom: 0.75rem;">
             <i class="fa-solid fa-guitar"></i> Indian Classical Sitar
           </h3>
-          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+          <p style="color: var(--text-secondary); margin-bottom: 1.2rem;">
             Accomplished Indian Classical Sitarist with a 6th-Year Senior Diploma from <b>Prayag Sangeet Samiti, Prayagraj</b>.
           </p>
           <div class="tag-container">
-            <span class="tag" style="color: var(--gold); border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.1);">6th Year Certified</span>
-            <span class="tag" style="color: var(--gold); border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.1);">CCRT National Scholar</span>
+            <span class="tag">6th Year Certified</span>
+            <span class="tag">CCRT National Scholar</span>
           </div>
         </div>
 
         <div class="card">
-          <h3 style="font-size: 1.25rem; color: var(--accent); margin-bottom: 0.75rem;">
+          <h3 style="font-size: 1.25rem; color: var(--accent-emerald); margin-bottom: 0.75rem;">
             <i class="fa-solid fa-table-tennis-paddle-ball"></i> Sports & Athletics
           </h3>
-          <p style="color: var(--text-muted); margin-bottom: 1rem;">
+          <p style="color: var(--text-secondary); margin-bottom: 1.2rem;">
             Badminton enthusiast with multiple awards in Zonal School Sports and Cultural events.
           </p>
           <div class="tag-container">
-            <span class="tag" style="color: var(--accent); border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.1);">Badminton</span>
-            <span class="tag" style="color: var(--accent); border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.1);">Zonal Awards</span>
+            <span class="tag">Badminton</span>
+            <span class="tag">Zonal Winner</span>
           </div>
         </div>
       </div>
@@ -610,12 +248,12 @@
     <!-- Contact -->
     <section id="contact">
       <div class="section-header">
-        <h2><i class="fa-solid fa-envelope" style="color: var(--primary)"></i> Let's Connect</h2>
+        <h2><i class="fa-solid fa-envelope" style="color: var(--accent-cyan)"></i> Let's Connect</h2>
         <div class="line"></div>
       </div>
-      <div class="card" style="text-align: center; padding: 3rem 1.5rem;">
-        <h3 style="font-size: 1.6rem; margin-bottom: 1rem;">Always Open to Exciting Hardware Collaborations</h3>
-        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">
+      <div class="card" style="text-align: center; padding: 3.5rem 1.5rem;">
+        <h3 style="font-size: 1.7rem; margin-bottom: 1rem; color: var(--text-primary);">Always Open to Hardware & Embedded Collaborations</h3>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2.2rem;">
           Whether it is embedded firmware, IoT architecture, or open-source hardware, feel free to drop a message!
         </p>
         <div class="hero-buttons">
@@ -634,6 +272,43 @@
   <footer>
     <p>Designed with ❤️ by <b>Priyanksu Mandal</b> &bull; Deployed via GitHub Actions</p>
   </footer>
+
+  <!-- Theme Toggle Interactive JavaScript -->
+  <script>
+    (function() {
+      const root = document.documentElement;
+      const themeToggleBtn = document.getElementById('theme-toggle');
+      const themeIcon = document.getElementById('theme-icon');
+
+      // Determine initial theme: saved in localStorage, or system preference, or default dark
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+
+      function setTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        if (theme === 'light') {
+          themeIcon.className = 'fa-solid fa-sun';
+          themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
+        } else {
+          themeIcon.className = 'fa-regular fa-moon';
+          themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
+        }
+      }
+
+      themeToggleBtn.addEventListener('click', function() {
+        const currentTheme = root.getAttribute('data-theme');
+        const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
+        setTheme(nextTheme);
+      });
+    })();
+  </script>
 
 </body>
 </html>

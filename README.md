@@ -2,7 +2,7 @@
 <!-- HEADER BANNER: Dynamic Waving Gradient Header          -->
 <!-- ======================================================= -->
 <p align="center">
-  <img src="assets/banner.png" width="100%" alt="Priyanksu Mandal Banner"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b0f19,30:102a43,70:0e75b6,100:00b4d8&height=250&section=header&text=Priyanksu%20Mandal&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Electronics%20%26amp%3B%20Communication%20%E2%80%A2%20Embedded%20Systems%20%E2%80%A2%20IoT%20%E2%80%A2%20VLSI&descSize=16&descAlignY=58&descColor=64dfdf" width="100%" alt="Priyanksu Mandal Banner"/>
 </p>
 
 <!-- ======================================================= -->
@@ -246,10 +246,6 @@ philosophy:
 <h2 id="-github-metrics--activity">
   📊 &nbsp;GitHub Analytics & Metrics
 </h2>
-
-<p align="center">
-  <img src="assets/trophy.png" alt="GitHub Trophies" />
-</p>
 
 <p align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Priyanksu-Mandal&include_all_commits=true&count_private=true&show_icons=true&theme=algolia&border_radius=10&hide_border=true" alt="Priyanksu's GitHub Stats"/>
